@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Product Registration</h2>
+    <form id="productRegistrationForm">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" required>
+
+        <label for="complianceStatus">Compliance Status:</label>
+        <select id="complianceStatus" name="complianceStatus" required>
+            <option value="compliant">Compliant</option>
+            <option value="non-compliant">Non-Compliant</option>
+        </select>
+
+        <label for="registrationCode">Registration Code:</label>
+        <input type="text" id="registrationCode" name="registrationCode" required>
+
+        <button type="submit">Register Product</button>
+    </form>
+    <script>
+        document.getElementById("productRegistrationForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add your registration logic here
+            alert("Product registered successfully!");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+.header{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background: none;
+    z-index: 100;
+    padding: 0 20px;
+}
+.log{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+
+.log .nav_item{
+    display: flex;
+    height: 100%;
+    align-items: 100%;
+    justify-content: space-between;
+    
+}
+.nav_logo{
+    font-size: 25px;
+}
+.nav_item{
+    column-gap: 25px;
+}
+.nav_link:hover{
+color: aqua;
+}
+.main{
+    background: url(img.jpg) no-repeat;
+    background-size: cover;   
+    background-position: center;
+}
+.page1{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    
+   
+
+}
+.new{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color:rgb(70, 9, 9);
+    border-radius: 10px;
+    padding: 30px 40px;
+    
+    
+}
+.page1 h3{
+    font-size: 30px;
+    text-align: center;
+    
+}
+.page1 .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;    
+    margin: 30px 0;
+    color: aliceblue;
+    
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;  
+    
+    font-size: 20px;
+    padding: 20px 45px 20px 20px;
+    border: 2px solid rgb(248, 239, 239);
+  border-radius: 50px;
+  
+    
+}
+.input-box input::placeholder{
+    color: #fff;
+
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+.page1 .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-sizing: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.page1 .register{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+.register p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+.page1 .Remember-forgot{
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    margin: -15 0 15px;
+    color: #fff;
+}
+.Remember-forgot a{
+color: #fff;
+text-decoration: none;
+}
+.Remember-forgot a:hover{
+    text-decoration: underline;
+}
+.Remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+
+
+
+
+
